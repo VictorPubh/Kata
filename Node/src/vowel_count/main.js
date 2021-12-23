@@ -1,4 +1,4 @@
-function getCount(str) {
+const getCount = (str) => {
   const str_array = str.split("");
   const vowels = ["a", "e", "i", "o", "u"];
   let vowelsCount = 0;
@@ -10,4 +10,6 @@ function getCount(str) {
   });
 
   return vowelsCount;
-}
+};
+
+module.exports = getCount;

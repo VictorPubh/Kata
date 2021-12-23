@@ -10,3 +10,5 @@ const number = (stops) => {
 
   return pass;
 };
+
+module.exports = number;

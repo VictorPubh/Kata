@@ -1,5 +1,5 @@
 const assert = require("assert/strict");
-const filter_list = require("../list_filtering/main");
+const filter_list = require("../src/list_filtering/main");
 
 describe("- Node/list_filtering/main.js", () => {
   it("Codewars Test Refactory", () => {
