@@ -1,7 +1,7 @@
 import { countBits } from "../src/bit_counting";
 
 describe("- Typescript/bit_counting/index.js", () => {
-  it("Codewars Test Refactory #1", () => {
+  it("Codewars Test Refactory", () => {
     expect(countBits(0)).toBe(0);
     expect(countBits(4)).toBe(1);
     expect(countBits(7)).toBe(3);
