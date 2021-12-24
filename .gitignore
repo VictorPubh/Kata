@@ -1,5 +1,5 @@
-Php/composer.lock
-Php/composer.phar
-Php/vendor/
+PHP/composer.lock
+PHP/composer.phar
+PHP/vendor/
 
-Php/.phpunit.result.cache
+PHP/.phpunit.result.cache
