@@ -1,2 +1,4 @@
 Php/composer.phar
 Php/vendor/
+
+Php/.phpunit.result.cache
