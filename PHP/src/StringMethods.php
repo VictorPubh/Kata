@@ -2,6 +2,8 @@
 
 namespace Kata;
 
+use Kata\Auxiliary;
+
 class StringMethods
 {
     public $string;
@@ -41,9 +43,8 @@ class StringMethods
 
     public function isPangram($phrase)
     {
-        $phrase = strtolower($phrase);
-        $phrase_array = str_split($phrase, 1);
         $alphas = range('a', 'z');
+        $phrase_array = Auxiliary::lowerAndSplit($phrase);
 
         foreach ($alphas as &$letter) {
             if (in_array($letter, $phrase_array)) {
@@ -54,6 +55,22 @@ class StringMethods
         foreach ($alphas as $letter) {
             if ($letter !== true) {
                 return false;
+            }
+        }
+
+        return true;
+    }
+
+    public function isIsogram($phrase)
+    {
+        $phrase_array = Auxiliary::lowerAndSplit($phrase, true);
+        $letter_array = array();
+
+        foreach ($phrase_array as $letter) {
+            if (in_array($letter, $letter_array)) {
+                return false;
+            } else {
+                array_push($letter_array, $letter);
             }
         }
 
