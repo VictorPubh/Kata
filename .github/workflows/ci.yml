@@ -1,4 +1,4 @@
-name: PestCI
+name: CI
 
 on:
   push:
