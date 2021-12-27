@@ -3,3 +3,5 @@ PHP/composer.phar
 PHP/vendor/
 
 PHP/.phpunit.result.cache
+
+Lua

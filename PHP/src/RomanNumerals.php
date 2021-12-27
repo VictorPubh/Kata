@@ -52,7 +52,7 @@ class RomanNumerals
     {
         $str = $this->string;
 
-        if ($this->isRomanNumber($str)) {
+        if ($this->isRomanNumber($str) || $this->isRomanNumber(strtoupper($str))) {
             $number = 0;
             $ref = array_reverse(self::$ref_roman);
 
@@ -68,6 +68,7 @@ class RomanNumerals
             return false;
         }
     }
+
     function encode(int $number)
     {
         if (is_int($number)) {
@@ -86,5 +87,33 @@ class RomanNumerals
         } else {
             return false;
         }
+    }
+
+    function decodeString()
+    {
+        $str_explode = explode(" ", $this->string);
+
+        foreach ($str_explode as &$word) {
+            if ($this->isRomanNumber($word)) {
+                $romans = new RomanNumerals($word);
+                $word = $romans->decode();
+            }
+        }
+
+        return implode(" ", $str_explode);
+    }
+
+    function encodeString(string $str)
+    {
+        $str_explode = explode(" ", $str);
+
+        foreach ($str_explode as &$word) {
+            $word_int = intval($word);
+            if ($word_int) {
+                $word = RomanNumerals::encode($word_int);
+            }
+        }
+
+        return implode(" ", $str_explode);
     }
 }
