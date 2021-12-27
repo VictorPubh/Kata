@@ -17,7 +17,7 @@ class WeirdStringCase
     return implode(" ", $str_explode);
   }
 
-  static function toWeirdCase($word)
+  static function toWeirdCase(string $word)
   {
     $word_length = strlen($word);
     $word_composition = "";
