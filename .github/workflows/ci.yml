@@ -1,6 +1,9 @@
-name: CI
+name: PestCI
 
-on: ['push']
+on:
+  push:
+    paths:
+      - 'PHP/**'
 
 jobs:
   build-test:
