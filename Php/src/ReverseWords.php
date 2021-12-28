@@ -8,20 +8,8 @@ namespace Kata;
 
 class ReverseWords
 {
-    public $phrase;
-
-    function __construct($string)
-    {
-        $this->phrase = $this->apply($string);
-    }
-
     public function apply($phrase)
     {
-        $words = explode(" ", $phrase);
-        foreach ($words as &$word) {
-            $word = strrev($word);
-        }
-
-        return join(" ", $words);
+        // your kata
     }
 }

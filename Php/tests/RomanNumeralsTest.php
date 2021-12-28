@@ -28,10 +28,8 @@ it('Codewars Test Refactory RomanNumerals::encode', function () {
     $fill_array = array();
 
     foreach ($roman_array as $value) {
-        if (RomanNumerals::isRomanNumber($value)) {
-            $_ = new RomanNumerals($value);
-            array_push($fill_array, $_->decode());
-        }
+        $_ = new RomanNumerals($value);
+        array_push($fill_array, $_->decode());
     }
 
     foreach ($fill_array as $key => $value) {

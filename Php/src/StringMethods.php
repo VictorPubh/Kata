@@ -26,11 +26,7 @@ class StringMethods
 
     public function containsEnding($word, $ending)
     {
-        $word_length = strlen($word);
-        $end_length = strlen($ending);
-        $pos_ending = $word_length - $end_length;
-
-        return substr($word, $pos_ending) === $ending;
+        // your kata
     }
 
     /**
@@ -43,22 +39,7 @@ class StringMethods
 
     public function isPangram($phrase)
     {
-        $alphas = range('a', 'z');
-        $phrase_array = Auxiliary::lowerAndSplit($phrase);
-
-        foreach ($alphas as &$letter) {
-            if (in_array($letter, $phrase_array)) {
-                $letter = true;
-            }
-        }
-
-        foreach ($alphas as $letter) {
-            if ($letter !== true) {
-                return false;
-            }
-        }
-
-        return true;
+        // your kata
     }
 
     /**
@@ -73,17 +54,6 @@ class StringMethods
 
     public function isIsogram($phrase)
     {
-        $phrase_array = Auxiliary::lowerAndSplit($phrase, true);
-        $letter_array = array();
-
-        foreach ($phrase_array as $letter) {
-            if (in_array($letter, $letter_array)) {
-                return false;
-            } else {
-                array_push($letter_array, $letter);
-            }
-        }
-
-        return true;
+        // your kata
     }
 }

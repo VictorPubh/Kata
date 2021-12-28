@@ -9,28 +9,8 @@ namespace Kata;
 
 class ShortestWord
 {
-    public $larger;
-
-    function __construct($string)
-    {
-        $larger = $this->apply($string);
-    }
-
     public function apply($phrase)
     {
-        $words = explode(" ", $phrase);
-        $larger = strlen(
-            $words[0]
-        );
-
-        foreach ($words as $word) {
-            $length = strlen($word);
-
-            if ($larger > $length) {
-                $larger = $length;
-            }
-        }
-
-        return $larger;
+        // your kata
     }
 }
