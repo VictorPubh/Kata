@@ -1,7 +1,18 @@
+# Php
 Php/composer.lock
 Php/composer.phar
 Php/vendor/
-
 Php/.phpunit.result.cache
+
+# Javascript
+Javascript/node_modules
+Javascript/package-lock.json
+Javascript/yarn.lock
+
+# Typescript
+Typescript/node_modules
+Typescript/package-lock.json
+Typescript/yarn.lock
+
 
 Lua
