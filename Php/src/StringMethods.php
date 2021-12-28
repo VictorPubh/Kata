@@ -44,12 +44,11 @@ class StringMethods
     public function isPangram($phrase)
     {
         $alphas = range('a', 'z');
-        $phrase_array = Auxiliary::lowerAndSplit($phrase);
+        $phrase_letter = preg_replace("/[^a-zA-Z]+/", "", $phrase);
+        $phrase_array = Auxiliary::lowerAndSplit($phrase_letter);
 
         foreach ($alphas as &$letter) {
-            if (in_array($letter, $phrase_array)) {
-                $letter = true;
-            }
+            $letter = in_array($letter, $phrase_array);
         }
 
         foreach ($alphas as $letter) {
