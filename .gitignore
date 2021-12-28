@@ -1,7 +1,7 @@
-PHP/composer.lock
-PHP/composer.phar
-PHP/vendor/
+Php/composer.lock
+Php/composer.phar
+Php/vendor/
 
-PHP/.phpunit.result.cache
+Php/.phpunit.result.cache
 
 Lua
