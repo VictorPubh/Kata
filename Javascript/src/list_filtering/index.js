@@ -1,11 +1,5 @@
 const filter_list = (matrix) => {
-  const filtered = matrix.filter((m) => {
-    if (typeof m === "number") {
-      return Math.sign(m) >= 0 ? true : false;
-    }
-  });
-
-  return filtered;
+  // your kata
 };
 
 module.exports = filter_list;

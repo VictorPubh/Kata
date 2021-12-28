@@ -1,8 +1,5 @@
 export function getMiddle(entry: string) {
-  const lenString = entry.length;
-  const normalizeMiddle = Math.floor(lenString / 2);
+  // your kata
 
-  return lenString % 2 === 0
-    ? entry[normalizeMiddle - 1] + entry[normalizeMiddle]
-    : entry[normalizeMiddle];
+  return 0;
 }
