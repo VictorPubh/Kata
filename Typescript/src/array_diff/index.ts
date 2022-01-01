@@ -8,11 +8,7 @@ export class arrayDiff {
   }
 
   with_filter() {
-    const non_coincident = this.a_array.filter(
-      (num) => !this.b_array.includes(num)
-    );
-
-    return non_coincident;
+    return this.a_array.filter((num) => !this.b_array.includes(num));
   }
 
   with_map() {
